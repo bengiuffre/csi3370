@@ -6,7 +6,8 @@ import javafx.fxml.FXML;
 
 public class PrimaryController {
 
-    String[]lists = {};
+    String[] lists = {"wow!", "cool!", "amazing!"};
+    String textItem = "";
 
 
     @FXML
@@ -16,5 +17,17 @@ public class PrimaryController {
    @FXML
     private void addList() throws IOException {
         System.out.println(lists[0]);
+    }
+    @FXML
+    private void showList() throws IOException {
+        for (String list : lists){
+            System.out.println(list);
+        }
+    @FXML
+    private void enterItem() throws IOException {
+        for (String list : lists){
+            System.out.println(list);
+        }
+    }
     }
 }
