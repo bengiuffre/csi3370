@@ -1,4 +1,4 @@
-package com.example;
+package blendgroup;
 
 import java.io.IOException;
 import javafx.fxml.FXML;

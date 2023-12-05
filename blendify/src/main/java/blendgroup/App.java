@@ -1,4 +1,4 @@
-package com.example;
+package blendgroup;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -17,9 +17,14 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
-        stage.setScene(scene);
+        
+        Parent root = FXMLLoader.load(getClass().getResource("primary.fxml"));
+        stage.setTitle("Blendify");
+        stage.setScene(new Scene(root));
         stage.show();
+        //scene = new Scene(loadFXML("primary"));
+        //stage.setScene(scene);
+        //stage.show();
     }
 
     static void setRoot(String fxml) throws IOException {
