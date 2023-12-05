@@ -20,6 +20,7 @@ public class App extends Application {
         
         Parent root = FXMLLoader.load(getClass().getResource("primary.fxml"));
         stage.setTitle("Blendify");
+        stage.setResizable(false);
         stage.setScene(new Scene(root));
         stage.show();
         //scene = new Scene(loadFXML("primary"));
